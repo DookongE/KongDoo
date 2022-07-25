@@ -17,22 +17,24 @@ class Tiger extends Animal{
 		System.out.println("호랑이가 네발로 뜁니다.");
 	}
 }
+
 class Eagle extends Animal{
 	public void move() {
 		System.out.println("독수리가 하늘을 날읍니다.");
 	}
 }
+
 public class AnimalTest {
 	public static void main(String[]  args) {
 		AnimalTest test = new AnimalTest();
 		test.moveAnimal(new Human());
 		test.moveAnimal(new Tiger());
 		test.moveAnimal(new Eagle());
-		
+
 		Animal a = new Human();
 	}
-	
+
 	public void moveAnimal(Animal animal) {
-	animal.move();
-}
+		animal.move();
 	}
+}
